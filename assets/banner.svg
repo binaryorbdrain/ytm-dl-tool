@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d12"/>
+      <stop offset="55%" stop-color="#1a0f14"/>
+      <stop offset="100%" stop-color="#2b0a14"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b5c"/>
+      <stop offset="100%" stop-color="#ff0033"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff0033"/>
+      <stop offset="100%" stop-color="#ff8fa3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff0033" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff0033" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffd7dc"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bgGrad)"/>
+
+  <!-- subtle grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- ambient glow behind circle -->
+  <circle cx="990" cy="180" r="220" fill="url(#glow)"/>
+
+  <!-- floating music notes -->
+  <g fill="#ff6b7a" opacity="0.35">
+    <circle cx="150" cy="60" r="5"/>
+    <path d="M155 60 L155 30 L168 26 L168 35 L158 38" stroke="#ff6b7a" stroke-width="2" fill="none"/>
+    <circle cx="1080" cy="60" r="4"/>
+    <path d="M1084 60 L1084 36 L1094 33 L1094 40 L1086 43" stroke="#ff6b7a" stroke-width="2" fill="none"/>
+    <circle cx="1120" cy="300" r="4"/>
+  </g>
+
+  <!-- equalizer waveform bars on right side -->
+  <g>
+    <rect x="820" y="230" width="10" height="40" fill="url(#barGrad)" opacity="0.5"/>
+    <rect x="838" y="200" width="10" height="70" fill="url(#barGrad)" opacity="0.6"/>
+    <rect x="856" y="160" width="10" height="110" fill="url(#barGrad)" opacity="0.7"/>
+    <rect x="874" y="190" width="10" height="80" fill="url(#barGrad)" opacity="0.6"/>
+    <rect x="892" y="150" width="10" height="120" fill="url(#barGrad)" opacity="0.75"/>
+    <rect x="910" y="210" width="10" height="60" fill="url(#barGrad)" opacity="0.55"/>
+    <rect x="928" y="170" width="10" height="100" fill="url(#barGrad)" opacity="0.65"/>
+    <rect x="946" y="220" width="10" height="50" fill="url(#barGrad)" opacity="0.5"/>
+  </g>
+
+  <!-- main circular badge: play button morphing into download arrow -->
+  <circle cx="1005" cy="180" r="95" fill="#150a0e" stroke="url(#redGrad)" stroke-width="3"/>
+  <circle cx="1005" cy="180" r="95" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- play triangle -->
+  <path d="M970 140 L970 200 L1015 170 Z" fill="url(#redGrad)"/>
+
+  <!-- download arrow stem -->
+  <line x1="1040" y1="150" x2="1040" y2="195" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <polyline points="1022,180 1040,200 1058,180" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <line x1="1018" y1="215" x2="1062" y2="215" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- decorative sound wave arcs radiating -->
+  <g stroke="#ff4b5c" fill="none" opacity="0.35">
+    <path d="M1112 130 Q1140 180 1112 230" stroke-width="3"/>
+    <path d="M1128 110 Q1168 180 1128 250" stroke-width="2"/>
+  </g>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#textGlow)" textLength="900" lengthAdjust="spacingAndGlyphs">YouTube Music</text>
+  <text x="60" y="228" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#textGlow)" textLength="460" lengthAdjust="spacingAndGlyphs">Downloader</text>
+
+  <!-- accent underline -->
+  <rect x="62" y="245" width="180" height="6" rx="3" fill="url(#redGrad)"/>
+
+  <!-- tagline -->
+  <text x="60" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#f5d9dd" opacity="0.9" textLength="760" lengthAdjust="spacingAndGlyphs">Download and convert YouTube tracks to high-quality MP3 files</text>
+  <text x="60" y="306" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#f5d9dd" opacity="0.9" textLength="330" lengthAdjust="spacingAndGlyphs">with metadata tagging</text>
+</svg>
